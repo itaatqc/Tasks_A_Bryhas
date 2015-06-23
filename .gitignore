@@ -14,7 +14,7 @@ hs_err_pid*
 /bin/
 *.[oa]
 
-log/
+logs/
 /.settings/
 target/
 test-output/
