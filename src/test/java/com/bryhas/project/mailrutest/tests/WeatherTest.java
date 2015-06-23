@@ -1,5 +1,6 @@
 package com.bryhas.project.mailrutest.tests;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
@@ -23,6 +24,8 @@ import com.bryhas.project.mailrutest.tools.WebDriverUtils;
  *
  */
 public class WeatherTest {
+	
+	public static final Logger LOG = Logger.getLogger(WeatherTest.class);
 
 	@DataProvider
 	public Object[][] testDataProvider() {
@@ -43,6 +46,7 @@ public class WeatherTest {
 		//load firefox, go to mail.ru and login
 		MailboxPage mailboxPage = StartMailRuHome.load(browser, url)
 				.successTestUserLogin(testUser);
+		LOG.info("Mail.ru loaded, test user logged in.");
 		
 		//click Mail.Ru
 		LoggedInHomePage loggedInHomePage = mailboxPage.clickMailRuLink();
@@ -51,6 +55,7 @@ public class WeatherTest {
 		SendMail.sendMailToInbox("Weather", (loggedInHomePage.getWeatherNowTemp().getText()+
 				loggedInHomePage.getWeatherNearTemp().getText()+", "+
 				loggedInHomePage.getWeatherTomorrowTemp().getText()));
+		LOG.info("E-mail sent.");
 		
 		//click inbox
 		loggedInHomePage.clickInbox();
@@ -65,7 +70,7 @@ public class WeatherTest {
 		//check the letter time
 		Assert.assertEquals(mailboxPage.getMailDate().getText().substring(0, 4), 
 				mailboxPage.getCurrentTime().substring(0, 4));
-		
+		LOG.info("E-mail checked.");
 				
 		// Return to previous state
 		mailboxPage.logout();

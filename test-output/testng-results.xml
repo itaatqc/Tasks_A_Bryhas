@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44505" started-at="2015-06-23T18:33:11Z" finished-at="2015-06-23T18:33:55Z">
+  <suite name="Default suite" duration-ms="38621" started-at="2015-06-23T20:50:03Z" finished-at="2015-06-23T20:50:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44505" started-at="2015-06-23T18:33:11Z" finished-at="2015-06-23T18:33:55Z">
+    <test name="Default test" duration-ms="38621" started-at="2015-06-23T20:50:03Z" finished-at="2015-06-23T20:50:42Z">
       <class name="com.bryhas.project.mailrutest.tests.WeatherTest">
-        <test-method status="PASS" signature="checkWeather(com.bryhas.project.mailrutest.tools.IBrowser, java.lang.String, com.bryhas.project.mailrutest.data.IUser, com.bryhas.project.mailrutest.data.ILetter)[pri:0, instance:com.bryhas.project.mailrutest.tests.WeatherTest@71c7db30]" name="checkWeather" duration-ms="42844" started-at="2015-06-23T21:33:11Z" data-provider="testDataProvider" finished-at="2015-06-23T21:33:54Z">
+        <test-method status="PASS" signature="checkWeather(com.bryhas.project.mailrutest.tools.IBrowser, java.lang.String, com.bryhas.project.mailrutest.data.IUser, com.bryhas.project.mailrutest.data.ILetter)[pri:0, instance:com.bryhas.project.mailrutest.tests.WeatherTest@366e2eef]" name="checkWeather" duration-ms="32348" started-at="2015-06-23T23:50:03Z" data-provider="testDataProvider" finished-at="2015-06-23T23:50:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.bryhas.project.mailrutest.tools.FirefoxBrowser@2c6a3f77]]>
+                <![CDATA[com.bryhas.project.mailrutest.tools.FirefoxBrowser@4b9e13df]]>
               </value>
             </param>
             <param index="1">
@@ -21,19 +21,19 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[com.bryhas.project.mailrutest.data.User@246ae04d]]>
+                <![CDATA[com.bryhas.project.mailrutest.data.User@2b98378d]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[com.bryhas.project.mailrutest.data.Letter@62043840]]>
+                <![CDATA[com.bryhas.project.mailrutest.data.Letter@475530b9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkWeather -->
-        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:com.bryhas.project.mailrutest.tests.WeatherTest@71c7db30]" name="tearDownAfterClass" is-config="true" duration-ms="1643" started-at="2015-06-23T21:33:54Z" finished-at="2015-06-23T21:33:55Z">
+        <test-method status="PASS" signature="tearDownAfterClass()[pri:0, instance:com.bryhas.project.mailrutest.tests.WeatherTest@366e2eef]" name="tearDownAfterClass" is-config="true" duration-ms="6256" started-at="2015-06-23T23:50:35Z" finished-at="2015-06-23T23:50:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterClass -->
