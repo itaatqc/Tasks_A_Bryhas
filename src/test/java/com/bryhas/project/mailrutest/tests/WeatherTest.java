@@ -62,15 +62,26 @@ public class WeatherTest {
 		
 		//reset e-mail table
 		mailboxPage.resetTable();
-				
+		
 		//check the letter title
 		Assert.assertEquals(mailboxPage.getMailTitle().getText().substring(0, 7), 
 				testLetter.getLetterTitle());
 		
-		//check the letter time
-		Assert.assertEquals(mailboxPage.getMailDate().getText().substring(0, 4), 
-				mailboxPage.getCurrentTime().substring(0, 4));
-		LOG.info("E-mail checked.");
+		// check if the letter time is in H:mm or HH:mm format
+		if ((mailboxPage.getMailDate().getText().substring(1, 2))
+				.equals(mailboxPage.getCurrentTime().substring(2, 3))){
+					
+			//check the letter time (Time is H:mm)
+			Assert.assertEquals(mailboxPage.getMailDate().getText().substring(0, 3), 
+					mailboxPage.getCurrentTime().substring(1, 4));
+			LOG.info("E-mail checked.");
+		} else {
+						
+			//check the letter time (Time is HH:mm)
+			Assert.assertEquals(mailboxPage.getMailDate().getText().substring(0, 4), 
+					mailboxPage.getCurrentTime().substring(0, 4));
+			LOG.info("E-mail checked.");
+		}	
 				
 		// Return to previous state
 		mailboxPage.logout();

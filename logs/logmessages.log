@@ -1,0 +1,25 @@
+2015-06-23 23:50:17 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-23 23:50:20 INFO  WeatherTest:58 - E-mail sent.
+2015-06-23 23:50:34 INFO  WeatherTest:73 - E-mail checked.
+2015-06-24 00:25:11 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 00:25:22 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 00:40:30 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 00:40:33 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 00:42:31 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 00:42:40 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 00:48:06 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 00:48:10 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 00:50:13 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 00:50:16 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 00:53:26 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 00:53:34 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 00:53:48 INFO  WeatherTest:79 - E-mail checked.
+2015-06-24 00:57:24 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 00:57:33 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 00:59:41 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 00:59:44 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 01:02:18 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 01:02:21 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 01:08:16 INFO  WeatherTest:49 - Mail.ru loaded, test user logged in.
+2015-06-24 01:08:24 INFO  WeatherTest:58 - E-mail sent.
+2015-06-24 01:08:39 INFO  WeatherTest:83 - E-mail checked.
