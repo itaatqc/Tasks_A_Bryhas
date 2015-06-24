@@ -43,6 +43,7 @@ public class WeatherTest {
 	public void checkWeather(IBrowser browser, String url, IUser testUser, ILetter testLetter) {
 		// Steps
 		
+		LOG.info("Test started.");
 		//load firefox, go to mail.ru and login
 		MailboxPage mailboxPage = StartMailRuHome.load(browser, url)
 				.successTestUserLogin(testUser);
