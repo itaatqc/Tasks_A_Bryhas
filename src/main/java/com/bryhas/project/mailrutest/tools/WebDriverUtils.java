@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 
 public class WebDriverUtils {
 	private static volatile WebDriverUtils instance = null;
-	private long implicitlyWaitTimeout = 10;
+	private long implicitlyWaitTimeout = 30;
 	private IBrowser browser;
 	private WebDriver driver;
 

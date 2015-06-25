@@ -64,13 +64,7 @@ public class MailboxPage {
 				.stalenessOf(this.mailTitle));
 		
 		System.out.println("++++++++++Start find, check = "+check);
-//		this.recordsFound = ContextVisible.get().getVisibleWebElement(
-//				By.id("recordsFound"));
-//		System.out.println("++++++++++End find, count = " + recordsFound.getText());
-//		// if recordsCount = 0 do not refresh
-//		if (Integer.parseInt(recordsFound.getText()) == 1) {
-			
-			// if recordsCount = 1 refresh 1st row
+
 		this.mailRuLink = ContextVisible.get().getVisibleWebElement(
 				By.xpath("//tbody/tr/td[1]/a[1]"));
 		this.mailTitle = ContextVisible.get().getVisibleWebElement(
