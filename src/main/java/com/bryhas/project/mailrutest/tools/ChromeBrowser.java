@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  * @author Andrew
  *
  */
-
+//TODO: What is the purpose of this class??
 public class ChromeBrowser implements IBrowser {
 
 	public WebDriver getWebDriver() {
