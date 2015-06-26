@@ -20,7 +20,7 @@ interface IBuild {
  * @author Andrew
  *
  */
-
+//TODO: Overenginering? are those interfaces used anywhere except here?
 public class User implements ILoginName, IPassword,
 		IEmail, IBuild, IUser {
 	private String loginName;
