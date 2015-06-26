@@ -63,8 +63,9 @@ public class MailboxPage {
 			.until(ExpectedConditions
 				.stalenessOf(this.mailTitle));
 		
+		//TODO: Log4j?
 		System.out.println("++++++++++Start find, check = "+check);
-
+		// TODO: move selectors to a separate file
 		this.mailRuLink = ContextVisible.get().getVisibleWebElement(
 				By.xpath("//tbody/tr/td[1]/a[1]"));
 		this.mailTitle = ContextVisible.get().getVisibleWebElement(
