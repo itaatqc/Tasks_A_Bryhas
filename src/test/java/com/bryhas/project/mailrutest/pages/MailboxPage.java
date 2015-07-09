@@ -23,19 +23,20 @@ public class MailboxPage {
 	private WebElement mailDate;
 	private WebElement logout;
 	
+	
 	public MailboxPage() {
-		
+		// TODO: move selectors to a separate file
 		this.mailRuLink = ContextVisible.get().getVisibleWebElement(
 				By.xpath("//tbody/tr/td[1]/a[1]"));
 		this.mailTitle = ContextVisible.get().getVisibleWebElement(
-				By.xpath(".//*[@id='b-letters']/div[2]/div[1]/div/div[2]/div[1]/div/a/div[4]/div[3]/div[1]"));
+				By.xpath(".//*[@id='b-letters']/div/div[1]/div/div[2]/div[1]/div/a/div[4]/div[3]/div[1]"));
 		this.mailDate = ContextVisible.get().getVisibleWebElement(
-				By.xpath(".//*[@id='b-letters']/div[2]/div[1]/div/div[2]/div[1]/div/a/div[4]/div[1]/span"));
+				By.xpath(".//*[@id='b-letters']/div/div[1]/div/div[2]/div[1]/div/a/div[4]/div[1]/span"));
 		this.logout = ContextVisible.get().getVisibleWebElement(
 				By.id("PH_logoutLink"));
 				
 	}
-	
+
 	public LoggedInHomePage clickMailRuLink() {
 		mailRuLink.click();
 		return new LoggedInHomePage();
@@ -56,24 +57,26 @@ public class MailboxPage {
 	
 	// resets table with e-mails
 	public void resetTable() {
-		
+				
 		boolean check = new WebDriverWait(
 				WebDriverUtils.get().getWebDriver(),
 				WebDriverUtils.get().getImplicitlyWaitTimeout())
 			.until(ExpectedConditions
 				.stalenessOf(this.mailTitle));
 		
-		//TODO: Log4j?
-		System.out.println("++++++++++Start find, check = "+check);
+			if (check == true) {						
+
 		// TODO: move selectors to a separate file
 		this.mailRuLink = ContextVisible.get().getVisibleWebElement(
 				By.xpath("//tbody/tr/td[1]/a[1]"));
 		this.mailTitle = ContextVisible.get().getVisibleWebElement(
-				By.xpath(".//*[@id='b-letters']/div[2]/div[1]/div/div[2]/div[1]/div/a/div[4]/div[3]/div[1]"));
+				By.xpath(".//*[@id='b-letters']/div/div[1]/div/div[2]/div[1]/div/a/div[4]/div[3]/div[1]"));
 		this.mailDate = ContextVisible.get().getVisibleWebElement(
-				By.xpath(".//*[@id='b-letters']/div[2]/div[1]/div/div[2]/div[1]/div/a/div[4]/div[1]/span"));
+				By.xpath(".//*[@id='b-letters']/div/div[1]/div/div[2]/div[1]/div/a/div[4]/div[1]/span"));
 		this.logout = ContextVisible.get().getVisibleWebElement(
 				By.id("PH_logoutLink"));
+			
+			}
 						
 		} 
 	

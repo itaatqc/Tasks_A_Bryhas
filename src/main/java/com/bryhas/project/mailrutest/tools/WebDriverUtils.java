@@ -87,16 +87,6 @@ public class WebDriverUtils {
 		browser.quit();
 	}
 
-	public void forwardPage() {
-		// TODO Use try
-		getWebDriver().navigate().forward();
-	}
-
-	public void previousPage() {
-		// TODO Use try
-		getWebDriver().navigate().back();
-	}
-
 	public String getCurrentUrl() {
 		return getWebDriver().getCurrentUrl();
 	}
